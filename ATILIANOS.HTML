@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATILIANO`S PIZZA</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #000;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            font-size: 20px;
+        }
+        header {
+            background-color: #000;
+            color: #ff0000;
+            text-align: center;
+            padding: 20px;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 3em;
+        }
+        header h1 span {
+            color: #ff0000;
+        }
+        section {
+            padding: 20px;
+            margin: 20px;
+            background-color: #333;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+            transition: transform 0.3s;
+        }
+        section:hover {
+            transform: scale(1.05);
+        }
+        h2 {
+            color: #ff0000;
+            font-size: 2em;
+        }
+        p, ul, .menu-item {
+            font-size: 20px;
+        }
+        .menu-item {
+            margin: 10px 0;
+        }
+        .contact-info {
+            list-style: none;
+            padding: 0;
+        }
+        .contact-info li {
+            margin: 5px 0;
+        }
+        .logo {
+            display: block;
+            margin: 0 auto;
+            width: 150px;
+            height: auto;
+        }
+        .menu-image {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+            height: auto;
+        }
+        .slider {
+            position: relative;
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+        .slides {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+        .slide {
+            min-width: 100%;
+            box-sizing: border-box;
+        }
+        .navigation {
+            position: absolute;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        .navigation button {
+            background-color: rgba(0, 0, 0, 0.5);
+            border: none;
+            color: #fff;
+            padding: 10px;
+            cursor: pointer;
+        }
+        .order-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #ff0000;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        .order-button:hover {
+            background-color: #cc0000;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>ATILIANO`S PIZZA</h1>
+        <img src="logo.jpg" alt="Logo de ATILIANO`S PIZZA" class="logo">
+    </header>
+    <section>
+        <h2>Historia</h2>
+        <p>En <strong>ATILIANO`S PIZZA</strong>, comenzamos nuestra aventura el 10 de noviembre de 2023 en el municipio de Jamundí. Desde entonces, nos hemos ganado el reconocimiento como las mejores pizzas de la región. Nuestro compromiso es ofrecerte una experiencia única con cada bocado.</p>
+    </section>
+    <section>
+        <h2>Quiénes Somos</h2>
+        <p>Somos un equipo apasionado por la pizza y el buen servicio. Nuestro objetivo es brindarte la mejor calidad y sabor en cada una de nuestras pizzas.</p>
+        <ul>
+            <li><strong>Atiliano Sierra</strong>: Director</li>
+            <li><strong>Karol Metrio</strong>: Domicilios y Provisión</li>
+            <li><strong>Zoraida Sierra</strong>: Equipo de Apoyo</li>
+            <li><strong>Samuel Sierra</strong>: Publicidad y Marketing</li>
+            <li><strong>Luis Carlos</strong>: Domiciliario</li>
+        </ul>
+    </section>
+    <section>
+        <h2>Menú</h2>
+        <div class="menu-item"><strong>Mini (4 porciones)</strong>: $12,000 COP</div>
+        <div class="menu-item"><strong>Pequeña (4 porciones)</strong>: $17,000 COP</div>
+        <div class="menu-item"><strong>Mediana (6 porciones)</strong>: $32,000 COP</div>
+        <div class="menu-item"><strong>Grande (8 porciones)</strong>: $45,000 COP</div>
+        <div class="menu-item"><strong>Familiar (10-12 porciones)</strong>: $55,000 COP</div>
+    </section>
+    <section>
+        <h2>Carta</h2>
+        <img src="carta 1.jpg" alt="Carta de ATILIANO`S PIZZA" class="menu-image">
+        <img src="carta.jpg" alt="Carta de ATILIANO`S PIZZA" class="menu-image">
+    </section>
+    <section class="slider">
+        <div class="slides">
+            <div class="slide">
+                <h2>Misión</h2>
+                <p>Nuestra misión es ofrecer pizzas de la más alta calidad, utilizando ingredientes frescos y locales, y brindar un servicio excepcional a nuestros clientes.</p>
+            </div>
+            <div class="slide">
+                <h2>Visión</h2>
+                <p>Nuestra visión es ser reconocidos como la mejor pizzería de la región, expandiendo nuestra presencia y manteniendo siempre nuestro compromiso con la calidad y el servicio.</p>
+            </div>
+        </div>
+        <div class="navigation">
+            <button id="prev">❮</button>
+            <button id="next">❯</button>
+        </div>
+    </section>
+    <section>
+        <h2>Ubicación</h2>
+        <p>Nos encontramos en el <strong>Barrio Parques de Castilla, Jamundí</strong>, en la <strong>Carrera 2A Sur # 7-05</strong>. ¡Ven a visitarnos!</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.123456789!2d-76.543210!3d3.123456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3a1234567890!2sParques%20de%20Castilla!5e0!3m2!1ses!2sco!4v1631234567890!5m2!1ses!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+    <section>
+        <h2>Contáctanos</h2>
+        <ul class="contact-info">
+            <li><strong>Instagram</strong>: <a href="https://www.instagram.com/atilianos_pizza" target="_blank" style="color: #ff0000;">ATILIANO`S PIZZA</a></li>
+            <li><strong>Teléfono</strong>: 321 510 7137</li>
+            <li><strong>Correo</strong>: <a href="mailto:atilianospizza@gmail.com" style="color: #ff0000;">atilianospizza@gmail.com</a></li>
+        </ul>
+        <a href="https://api.whatsapp.com/send/?phone=573215107137&text&type=phone_number&app_absent=0" class="order-button">Ordena Ahora</a>
+    </section>
+    <script>
+        const slides = document.querySelector('.slides');
+        const prev = document.getElementById('prev');
+        const next = document.getElementById('next');
+        let index = 0;
+
+        function showSlide(index) {
+            slides.style.transform = `translateX(${-index * 100}%)`;
+        }
+
+        prev.addEventListener('click', () => {
+            index = (index > 0) ? index - 1 : slides.children.length - 1;
+            showSlide(index);
+        });
+
+        next.addEventListener('click', () => {
+            index = (index < slides.children.length - 1) ? index + 1 : 0;
+            showSlide(index);
+        });
+    </script>
+</body>
+</html>
